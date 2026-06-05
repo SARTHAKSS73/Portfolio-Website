@@ -81,7 +81,7 @@ const HereSection = () => {
                 />
             </h2>
             <p className="text-sm md:text-base text-white/80 mt-4">
-              Currently, B.Tech Computer Science Engineering (AI) Student at{" "}
+              Currently, B.Tech Electrical Engineering Student at{" "}
               <span className="inline-flex items-center gap-1 text-[#1877F2] font-medium">
                 <FaGraduationCap className="size-4" aria-hidden/> 
                 Shri Govindram Seksaria Institute of Technology and Science, Indore
