@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import { CursorGlow } from "./Components/CursorGlow"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,14 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col relative selection:bg-purple-500/30">
+        {/* Placed right at top of body layer so it registers globally */}
+        <CursorGlow />
+        
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
