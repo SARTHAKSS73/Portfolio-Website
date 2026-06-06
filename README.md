@@ -1,8 +1,8 @@
-# 🚀 Sarthak Shukla – Developer Portfolio
+#  Sarthak Shukla – Developer Portfolio
 
 A modern, high-performance portfolio platform built to showcase my work in Machine Learning, Data Engineering, Software Development, and Technical Leadership through an interactive, responsive, and optimized user experience.
 
-## ✨ Highlights
+##  Highlights
 
 * Responsive single-page portfolio architecture
 * Interactive project showcase with dynamic rendering
@@ -13,7 +13,7 @@ A modern, high-performance portfolio platform built to showcase my work in Machi
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 
@@ -35,7 +35,7 @@ A modern, high-performance portfolio platform built to showcase my work in Machi
 
 ---
 
-## 📌 Key Features
+## Key Features
 
 ### Dynamic Project Rendering
 
@@ -85,7 +85,7 @@ Technical reports, machine learning case studies, and project documentation are 
 
 ---
 
-## ⚙️ Getting Started
+##  Getting Started
 
 ### Clone Repository
 
@@ -120,7 +120,7 @@ The application is deployed on Vercel with automated CI/CD integration. Every pu
 
 ---
 
-## 👨‍💻 About Me
+##  About Me
 
 **Sarthak Shukla**
 
