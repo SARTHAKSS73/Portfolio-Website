@@ -142,7 +142,7 @@ I enjoy building intelligent systems, data-driven applications, automation workf
 
 * Email: [shuklasarthak0703@gmail.com](mailto:shuklasarthak0703@gmail.com)
 * GitHub: https://github.com/SARTHAKSS73
-* LinkedIn: https://www.linkedin.com/in/sarthak-shukla
+* LinkedIn: [https://www.linkedin.com/in/sarthak-shukla](https://www.linkedin.com/in/sarthak-shukla-5bb87424a/)
 
 ---
 
