@@ -41,7 +41,7 @@ const experienceItems: ExperienceItem[] = [
     timeline: "June 2024 – July 2024",
     location: "Hyderabad, India",
     description: "Developed frontend user interfaces and clean digital logic modules supporting healthcare management services.",
-    image: "/images/webd.png",
+    image: "/images/webdev.png",
     backTitle: "Skills & Impact Gained",
     details: [
       "Built clean, responsive UI layouts ensuring fast rendering and accessibility profiles.",
