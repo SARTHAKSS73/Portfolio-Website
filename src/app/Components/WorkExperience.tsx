@@ -146,7 +146,7 @@ const WorkExperience = () => {
           Work Experience and Positions of Responsibilities
         </h3>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 md:gap-8 perspective-1000">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 md:gap-8 [perspective:1000px]">
           {experienceItems.map((item) => {
             const isFlipped = !!flippedCards[item.id];
 
@@ -154,21 +154,18 @@ const WorkExperience = () => {
               <div
                 key={item.id}
                 className="relative w-full h-[390px] sm:h-[340px] md:h-[350px] rounded-2xl flex"
-                style={{ transformStyle: "preserve-3d" }}
               >
                 {/* INNER FLIP LAYER */}
                 <div
-                  className="relative w-full flex-1 duration-500 transition-transform flex"
+                  className="relative w-full flex-1 duration-500 transition-transform flex [transform-style:preserve-3d]"
                   style={{
-                    transformStyle: "preserve-3d",
                     transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
                   }}
                 >
                   
-                  {/* FRONT FACE */}
+                  {/* FRONT FACE - FIXED: Appended our global custom 'backface-hidden' utility to enforce clipping on iOS */}
                   <div
-                    className="absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#140a26] border border-[#2f1c55] rounded-2xl shadow-[0_10px_40px_rgba(113, 39, 186, 0.25)] flex flex-col justify-between group hover:border-[#7c3aed]/60 hover:shadow-[0_20px_60px_rgba(113, 39, 186, 0.40)] transition-all duration-300"
-                    style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
+                    className="backface-hidden absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#140a26] border border-[#2f1c55] rounded-2xl shadow-[0_10px_40px_rgba(113, 39, 186, 0.25)] flex flex-col justify-between group hover:border-[#7c3aed]/60 hover:shadow-[0_20px_60px_rgba(113, 39, 186, 0.40)] transition-all duration-300"
                   >
                     {/* Front Card Glow */}
                     <div
@@ -217,15 +214,10 @@ const WorkExperience = () => {
                     </div>
                   </div>
 
-                  {/* BACK FACE */}
+                  {/* BACK FACE - FIXED: Removed inline parameters and appended 'backface-hidden' */}
                   <div
                     onClick={(e) => handleFlip(item.id, e)}
-                    className="absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#160c2b] border border-[#7c3aed]/50 rounded-2xl shadow-[0_0_35px_rgba(113,39,186,0.3)] flex flex-col justify-between text-left cursor-pointer group"
-                    style={{
-                      backfaceVisibility: "hidden",
-                      WebkitBackfaceVisibility: "hidden",
-                      transform: "rotateY(180deg)",
-                    }}
+                    className="backface-hidden absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#160c2b] border border-[#7c3aed]/50 rounded-2xl shadow-[0_0_35px_rgba(113,39,186,0.3)] flex flex-col justify-between text-left cursor-pointer group [transform:rotateY(180deg)]"
                   >
                     <div className="flex flex-col h-[calc(100%-24px)]">
                       {/* Back Side Navigation Header */}

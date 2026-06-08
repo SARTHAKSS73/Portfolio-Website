@@ -31,3 +31,10 @@ body {
   color: var(--foreground);
   font-family: "Preahvihear", sans-serif;/*2*/
 }
+/*Safari iOS Card Flip Bug (iske bina card flip krne pr work exp wala , learn more tb bhi likha aa rha )*/
+.backface-hidden {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  -webkit-transform-style: preserve-3d !important;
+  transform-style: preserve-3d !important;
+}
