@@ -163,9 +163,11 @@ const WorkExperience = () => {
                   }}
                 >
                   
-                  {/* FRONT FACE - FIXED: Appended our global custom 'backface-hidden' utility to enforce clipping on iOS */}
+                  {/* FRONT FACE - FIXED: Conditionally injected visibility & opacity styling to turn off layout rendering for iOS when flipped */}
                   <div
-                    className="backface-hidden absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#140a26] border border-[#2f1c55] rounded-2xl shadow-[0_10px_40px_rgba(113, 39, 186, 0.25)] flex flex-col justify-between group hover:border-[#7c3aed]/60 hover:shadow-[0_20px_60px_rgba(113, 39, 186, 0.40)] transition-all duration-300"
+                    className={`backface-hidden absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#140a26] border border-[#2f1c55] rounded-2xl shadow-[0_10px_40px_rgba(113, 39, 186, 0.25)] flex flex-col justify-between group hover:border-[#7c3aed]/60 hover:shadow-[0_20px_60px_rgba(113, 39, 186, 0.40)] transition-all duration-300 ${
+                      isFlipped ? "opacity-0 pointer-events-none invisible" : "opacity-100 visible"
+                    }`}
                   >
                     {/* Front Card Glow */}
                     <div
@@ -214,10 +216,12 @@ const WorkExperience = () => {
                     </div>
                   </div>
 
-                  {/* BACK FACE - FIXED: Removed inline parameters and appended 'backface-hidden' */}
+                  {/* BACK FACE - FIXED: Added conditional visibility states to fully drop calculations when showing front face */}
                   <div
                     onClick={(e) => handleFlip(item.id, e)}
-                    className="backface-hidden absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#160c2b] border border-[#7c3aed]/50 rounded-2xl shadow-[0_0_35px_rgba(113,39,186,0.3)] flex flex-col justify-between text-left cursor-pointer group [transform:rotateY(180deg)]"
+                    className={`backface-hidden absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#160c2b] border border-[#7c3aed]/50 rounded-2xl shadow-[0_0_35px_rgba(113,39,186,0.3)] flex flex-col justify-between text-left cursor-pointer group [transform:rotateY(180deg)] transition-all duration-300 ${
+                      isFlipped ? "opacity-100 visible" : "opacity-0 pointer-events-none invisible"
+                    }`}
                   >
                     <div className="flex flex-col h-[calc(100%-24px)]">
                       {/* Back Side Navigation Header */}
