@@ -23,7 +23,7 @@ const PROJECTS_DATA = [
     tech: ["Nextjs", "React19", "TypeScript", "TailwindCSS", "Framer_Motion", "Shadcn/ui"],
     image: "/images/projectWebd.png",
     reportUrl: "/documents/portfolio-report.pdf",
-    githubUrl: "https://github.com/SARTHAKSS73",
+    githubUrl: "https://github.com/SARTHAKSS73/Sarthak-Website",
     glowGradient: "radial-gradient(60% 60% at 40% 40%, rgba(125, 58, 242, 0.65) 0%, rgba(18, 8, 36, 0) 70%)"
   },
   {
