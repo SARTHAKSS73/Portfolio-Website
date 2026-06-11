@@ -111,7 +111,7 @@ const HereSection = () => {
               <div className="relative w-44 h-44 rounded-2xl p-1 bg-gradient-to-b from-[#7c3aed] to-[#1d0e3a] shadow-lg mb-5 transition-transform duration-500 group-hover:scale-[1.02]">
                 <div className="relative w-full h-full rounded-xl overflow-hidden bg-[#180d31] border border-white/5">
                   <Image
-                    src="/images/personal-photo.png" 
+                    src="/images/personal-photo.jpeg" 
                     alt="Sarthak Shukla Real Photo"
                     fill
                     className="object-cover"
