@@ -33,7 +33,7 @@ const Header = () => {
         </Link>
         {/* desktop wala naviation menu */}
         <nav className="hidden md:flex space-x-10 font-medium text-lg text-white/80">
-          <Link href="#home" className="hover:text-[#a855f7] transition duration-200">Home</Link>
+          <Link href="#home" className="hover:text-[#a855f7] transition duration-200">About</Link>
           <Link href="#about" className="hover:text-[#a855f7] transition duration-200">Work Experiences</Link>
           <Link href="#Tech Stack" className="hover:text-[#a855f7] transition duration-200">Tech Stack</Link>
           <Link href="#projects" className="hover:text-[#a855f7] transition duration-200">Projects</Link>
@@ -47,7 +47,7 @@ const Header = () => {
         {isOpen && (
           <div className="md:hidden px-6 pb-4">
             <div className="flex flex-col gap-3 text-base font-medium text-white/80">
-            <Link href="#home" className="hover:text-[#a855f7] transition duration-200">Home</Link>
+            <Link href="#home" className="hover:text-[#a855f7] transition duration-200">About</Link>
             <Link href="#about" className="hover:text-[#a855f7] transition duration-200">Work Experience</Link>
             <Link href="#Tech Stack" className="hover:text-[#a855f7] transition duration-200">Tech Stack</Link>
             <Link href="#projects" className="hover:text-[#a855f7] transition duration-200">Projects</Link>
