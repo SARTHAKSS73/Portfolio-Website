@@ -163,7 +163,7 @@ const WorkExperience = () => {
                   }}
                 >
                   
-                  {/* FRONT FACE - FIXED: Conditionally injected visibility & opacity styling to turn off layout rendering for iOS when flipped */}
+                  {/* FRONT FACE */}
                   <div
                     className={`backface-hidden absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#140a26] border border-[#2f1c55] rounded-2xl shadow-[0_10px_40px_rgba(113, 39, 186, 0.25)] flex flex-col justify-between group hover:border-[#7c3aed]/60 hover:shadow-[0_20px_60px_rgba(113, 39, 186, 0.40)] transition-all duration-300 ${
                       isFlipped ? "opacity-0 pointer-events-none invisible" : "opacity-100 visible"
@@ -216,7 +216,7 @@ const WorkExperience = () => {
                     </div>
                   </div>
 
-                  {/* BACK FACE - FIXED: Added conditional visibility states to fully drop calculations when showing front face */}
+                  {/* BACK FACE */}
                   <div
                     onClick={(e) => handleFlip(item.id, e)}
                     className={`backface-hidden absolute inset-0 w-full h-full p-5 sm:p-6 md:p-7 bg-[#160c2b] border border-[#7c3aed]/50 rounded-2xl shadow-[0_0_35px_rgba(113,39,186,0.3)] flex flex-col justify-between text-left cursor-pointer group [transform:rotateY(180deg)] transition-all duration-300 ${

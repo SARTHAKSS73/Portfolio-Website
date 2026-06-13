@@ -34,7 +34,7 @@ const TechStack = () => {
           Tech Stack
         </h3>
 
-        {/* CENTER INTRO TEXT & ACCORDING LARGE IMAGE */}
+        {/* CENTER INTRO TEXT */}
         <div className='text-center relative z-10 max-w-4xl mx-auto w-full'>
           <ScrollReveal stagger={0.08}>
             <p className='text-white/70 mb-4 text-base md:text-lg'>
@@ -59,7 +59,7 @@ const TechStack = () => {
           </ScrollReveal>
         </div>
 
-        {/* LEFT SIDE HIGHER POSITIONED SKILLS (Clean, borderless lists) */}
+        {/* LEFT SIDE HIGHER POSITIONED SKILLS*/}
         <div className='flex flex-col gap-8 mt-12 lg:mt-0 lg:absolute lg:left-4 lg:top-24 lg:w-[280px] xl:w-[310px] z-20 text-center lg:text-left'>
           {leftSkills.map((group, index) => (
             <div key={index} className='relative'>
@@ -80,7 +80,7 @@ const TechStack = () => {
           ))}
         </div>
 
-        {/* RIGHT SIDE HIGHER POSITIONED SKILLS (Clean, borderless lists) */}
+        {/* RIGHT SIDE HIGHER POSITIONED SKILLS */}
         <div className='flex flex-col gap-8 mt-8 lg:mt-0 lg:absolute lg:right-4 lg:top-24 lg:w-[280px] xl:w-[310px] z-20 text-center lg:text-left'>
           {rightSkills.map((group, index) => (
             <div key={index} className='relative'>

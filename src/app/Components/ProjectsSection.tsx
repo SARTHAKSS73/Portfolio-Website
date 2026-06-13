@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import ScrollReveal from './ScrollReveal'
 
-// 1. ALL YOUR PROJECTS LIVE HERE. To add a new one, just paste a new object at the bottom of this list!
+// 1. ALL YOUR PROJECTS LIVE HERE. To add a new one, just paste a new object at the bottom of this list and phir ho jayega
 const PROJECTS_DATA = [
   {
     id: "black-friday",
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="relative py-28 space-y-24 overflow-hidden">
       
-      {/* 2. THE LOOP: This maps over your data and alternates the design left/right automatically based on the index! */}
+      {/* 2. THE LOOP */}
       {PROJECTS_DATA.map((project, index) => {
         const isEven = index % 2 === 0;
 

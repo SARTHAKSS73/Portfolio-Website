@@ -12,9 +12,7 @@ const HereSection = () => {
       {/* Container wrapper remains completely default, allowing text to expand naturally */}
       <div className="w-full max-w-7xl mx-auto px-4 relative">
         
-        {/* =========================================================================
-           LEFT & MAIN AREA: Your Exact Original Layout, Restored to 100% Native Width
-           ========================================================================= */}
+        {/*LEFT & MAIN AREA*/}
         <div className="w-full flex flex-col">
           
           {/* avatar and headline */}
@@ -46,7 +44,6 @@ const HereSection = () => {
                 A Curious Mind who
               </p>
 
-              {/* FIXED: 'Makes machines learn' is guaranteed back on a single line */}
               <h1 className="text-4xl sm:text-5xl font-normal tracking-tight leading-[1.15] whitespace-nowrap md:whitespace-normal">
                 <span className="block md:inline-block">Makes machines learn </span>
                 <span className="block">
@@ -100,7 +97,7 @@ const HereSection = () => {
           </ScrollReveal>
         </div>
 
-        {/* RIGHT SIDEBAR: Absolute layout on desktop to sit outside text flow completely*/}
+        {/* RIGHT SIDEBARR */}
         <div className="w-full lg:w-auto lg:absolute lg:top-0 lg:right-0 xl:-right-4 flex justify-center mt-16 lg:mt-0 z-30">
           <ScrollReveal delay={0.2} className="w-full max-w-[340px]">
             <div className="relative w-full bg-[#130927]/80 border border-[#2e1854] rounded-2xl p-6 shadow-[0_15px_45px_rgba(113,39,186,0.2)] hover:border-[#7c3aed]/40 hover:shadow-[0_20px_55px_rgba(113,39,186,0.35)] transition-all duration-300 group flex flex-col items-center">
@@ -131,16 +128,16 @@ const HereSection = () => {
                 </p>
               </div>
 
-              {/* 3. Resume Link Trigger Button */}
+              {/* 3. Resume Link Button */}
               <div className="relative z-10 w-full mt-auto">
                 <a
-                  href="/documents/Sarthak_Shukla_Resume.pdf" 
+                  href="/documents/Sarthak_Resume.pdf" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[#6d28d9] to-[#7c3aed] text-white font-medium text-sm hover:from-[#7c3aed] hover:to-[#8b5cf6] active:scale-[0.98] shadow-[0_4px_20px_rgba(124,58,237,0.25)] transition-all cursor-pointer group/btn"
                 >
                   <FaDownload className="size-4 transition-transform group-hover/btn:-translate-y-0.5" />
-                  Download Resume
+                  View Resume
                 </a>
               </div>
 

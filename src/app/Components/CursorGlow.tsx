@@ -25,7 +25,7 @@ export const CursorGlow = () => {
       return () => window.removeEventListener("resize", handleResize);
     }
 
-    // 2. Desktop-only setup: Capture user mouse moves instantly
+    // 2. Desktop-only setup: Capture user mouse moves
     const updateMousePosition = (e: MouseEvent) => {
       mousePos.current = { x: e.clientX, y: e.clientY };
       if (!isVisible) setIsVisible(true);
@@ -38,7 +38,6 @@ export const CursorGlow = () => {
     document.body.addEventListener("mouseleave", handleMouseLeave);
     document.body.addEventListener("mouseenter", handleMouseEnter);
 
-    // 3. Desktop-only setup: Animation Loop
     let animationFrameId: number;
     
     const renderLoop = () => {
@@ -65,7 +64,7 @@ export const CursorGlow = () => {
     };
   }, [isVisible, isMobile]);
 
-  // 4. Return absolutely nothing (null) if the viewport layout drops below desktop view limits
+  // Return absolutely nothing (null) if the viewport layout drops below desktop view limits
   if (isMobile) return null;
 
   return (

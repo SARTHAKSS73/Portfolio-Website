@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FaChevronRight, FaChessPawn, FaRotateLeft } from "react-icons/fa6";
 import { LuAward, LuUsers, LuFlame } from "react-icons/lu";
 
-// 1. Swimmer icon defined at the top safely
+// 1. Swimmer icon defined at the top
 const SwimmerIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
     <path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2-1a2.4 2.4 0 0 1 2-1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2-1a2.4 2.4 0 0 1 2-1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2-1" />
@@ -13,7 +13,6 @@ const SwimmerIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-// 2. Enhanced Data Array containing Front details AND Back details
 const activities = [
   {
     id: "chess",
@@ -90,7 +89,7 @@ export const BeyondCode = () => {
         <div className="w-12 h-[3px] bg-[#a855f7] mt-2 rounded-full shadow-[0_0_8px_#a855f7]" />
       </div>
 
-      {/* Cards Stack with 3D Viewport Perspective */}
+      {/* Cards Stack with 3D Viewe */}
       <div className="flex flex-col gap-5 perspective-1000">
         {activities.map((activity) => {
           const isFlipped = !!flippedCards[activity.id];
@@ -111,7 +110,7 @@ export const BeyondCode = () => {
                 }}
               >
                 
-                {/* ==================== FRONT SIDE ==================== */}
+                {/* FRONT SIDE */}
                 <div
                   className="absolute inset-0 w-full h-full flex items-center justify-between bg-[#110c1f]/40 border border-white/5 p-5 rounded-2xl backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.15)] group-hover:border-purple-500/20 group-hover:shadow-[0_0_25px_rgba(168,85,247,0.1)] transition-all duration-300"
                   style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
@@ -139,7 +138,7 @@ export const BeyondCode = () => {
                   </div>
                 </div>
 
-                {/* ==================== BACK SIDE ==================== */}
+                {/* BACK SIDE*/}
                 <div
                   className="absolute inset-0 w-full h-full flex flex-col justify-center bg-[#161024]/90 border border-purple-500/30 p-4 rounded-2xl shadow-[0_0_30px_rgba(168,85,247,0.15)]"
                   style={{
@@ -156,7 +155,7 @@ export const BeyondCode = () => {
                     <FaRotateLeft className="size-3 text-white/30 hover:text-[#c084fc] transition-colors" />
                   </div>
                   
-                  {/* Detailed Accomplishments Bullets */}
+                  {/* Detailed Bullets */}
                   <ul className="space-y-1">
                     {activity.details.map((detail, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-xs text-white/80 leading-normal">
